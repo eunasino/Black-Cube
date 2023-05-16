@@ -51,15 +51,6 @@
 
 	\subsection*{Spazio Virtuale}
 	Gli script di game engine di Black Cube sono scritti in C++. I soundbank per l'implementazione audio sono generati dal middleware Wwise. Di seguito la gerarchia degli eventi e delle azioni del gioco. Ciascuna con un proprio trigger che richiama un file audio, i quali vengono interpolati randomicamente ad ogni trigger in più parametri quali: pitch, gain, Eq(LowPass filter e HighPass filter), Flanging(Feedback, dry/wet). In modo tale che suonino sempre diversamente, rendendo l'esperienza esclusiva ad ogni singola azione del giocatore.
-	
-	\begin{figure}[h]
-		\begin{center}
-			\includegraphics[width=.47\textwidth]{img/image2.jpg}
-			\caption{\textbf{Gerarchia degli eventi all'interno del soundbank "Main"}
-			\label{gr01}
-		\end{center}
-	\end{figure}
-
 	Come si può vedere nella figura 2, gli eventi all'interno del soundbank "Main" sono organizzati in diverse sezioni, quali:
 	\begin{compactitem}
 		\item Items: suoni associati agli eventi delle diverse scene
@@ -67,11 +58,19 @@
 		\item Main Character: suoni associati alle azioni fisiche del giocatore
 		\item Monsters: suoni associati alle azioni fisiche dei nemici
 	\end{compactitem}
+	
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[width=.47\textwidth]{img/image2.jpg}
+			\caption{\textbf{Gerarchia degli eventi all'interno del soundbank "Main"}}
+			\label{gr01}
+		\end{center}
+	\end{figure}
 
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=.47\textwidth]{img/image3.jpg}
-			\caption{\textbf{Gerarchia degli eventi sonori delle scene}
+			\caption{\textbf{Gerarchia degli eventi sonori delle scene}}
 			\label{gr01}
 		\end{center}
 	\end{figure}
@@ -79,7 +78,7 @@
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=.47\textwidth]{img/image4.jpg}
-			\caption{\textbf{Gerarchia degli eventi sonori delle armi del giocatore}
+			\caption{\textbf{Gerarchia degli eventi sonori delle armi del giocatore}}
 			\label{gr01}
 		\end{center}
 	\end{figure}
@@ -87,18 +86,18 @@
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=.47\textwidth]{img/image5.jpg}
-			\caption{\textbf{Gerarchia degli eventi sonori delle azioni fisiche del giocatore}
-				\label{gr01}
-			\end{center}
-		\end{figure}
+			\caption{\textbf{Gerarchia degli eventi sonori delle azioni fisiche del giocatore}}
+			\label{gr01}
+		\end{center}
+	\end{figure}
 	
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=.47\textwidth]{img/image6.jpg}
-			\caption{\textbf{Gerarchia degli eventi sonori delle azioni fisiche dei nemici}
+			\caption{\textbf{Gerarchia degli eventi sonori delle azioni fisiche dei nemici}}
 				\label{gr01}
-			\end{center}
-		\end{figure}
+		\end{center}
+	\end{figure}
 	
 	Si può notare che sono presenti diverse icone grafiche associate a ciascun evento. Questi simboli indicano il tipo di evento che viene richiamato per l'azione compiuta nel gioco. I principali sono:
 	
@@ -118,14 +117,16 @@
 	
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=.47\textwidth]{img/image1.jpg}
-			\caption{\textbf{Modello 3D dello spazio fisico per l'allestimento dell'installazione}
+			\includegraphics[width=5cm]{img/image1.png}
+			\caption{\textbf{Modello 3D dello spazio fisico per l'allestimento dell'installazione}}
 				\label{gr01}
 		\end{center}
 	\end{figure}
 	
 \section*{SVILUPPI ED APPLICAZIONI}
 Tutto ciò trasforma Black Cube in un opera immersiva, coinvolgente, tattile. Ma che tipo di stimoli restituisce l'esperienza che offre? Cosa c'è da scoprire in un livello così profondo di astrazione e virtualtà? può Black Cube essere un'approccio suggestivo volto all'aumento delle capacità psichiche del giocatore? Può in qualche modo aumentare l'immersione e dunque il coinvolgimento del giocatore, sbloccandone un potenziale nascosto?
+
+	\subsection*{Gamification}
 
 	
 	
