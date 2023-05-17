@@ -112,8 +112,13 @@
 	Alcuni di questi eventi sono modulati tramite RTPC (Real-Time Parameter Control). Si tratta di un sistema che consente di controllare i parametri sonori in tempo reale durante la riproduzione del gioco. 
 	L'RTPC permette di modificare i valori di un parametro, come il volume o la frequenza di taglio di un filtro, in modo dinamico e in base a determinati eventi o situazioni all'interno del gioco. Ad esempio, si potrebbe utilizzare l'RTPC per aumentare il volume del gesto sonoro quando il giocatore si avvicina a una fonte di rumore, o per modificare la velocità di riproduzione della musica in base alla velocità di movimento del personaggio. In questo modo, è possibile creare un'esperienza sonora più immersiva e realistica per il giocatore.
 	
+	Il formato audio nel quale è stato missato il gioco è stereo a due canali. Nel calcolatore viene effettuato un routing interno dei segnali audio: l'audio in uscita dal videogioco viene mandato al canale virtuale del mixer Audient 1/2. Il fader del volume sarà impostato a -ifndB in modo che non esca dal master, il canale in questione viene impostato come fonte di Loopback. In un codice associato scritto in Maxmsp, l'audio viene prelevato dai canali 1/2 del mixer virtuale e processato secondo dei parametri descritti alla fine del paragrafo. L'audio in uscita di MaxMsp viene mandato ai canali 3/4 del mixer virtuale Audient, i quali vanno direttamente in uscita dal master. In questo modo ascolteremo solo l'audio in uscita da MaxMsp, che viene a sua volta prelevato da Black Cube.
+	Il codice di MaxMsp ha lo scopo di restituire un feedback organico che si contrapponga all'astrazione: durante l'esperienza del giocatore, all'aumentare della sua immersione nella dimensione di Black Cube, dei suoni legati alla nostra dimensione, simboli di naturalezza e quotidianità, vengono richiamati dalla patch ammassandosi sempre di più con il passare del tempo e intensificandosi all'aumentare dell'escursione dinamica del gioco.
+	Il soundscape generato dalla totalità dell'opera veicola la crescente necessità di ritorno alla nostra dimensione natia in seguito all'alienazione da questa data dall'esperienza immersiva in questo livello profondo di astrazione e virtualità. Maggiormente ci si smarrisce nella terza dimensione, maggiore è la necessità istintiva di evaderne e fare ritorno alla realtà.
+	
 	\subsection*{Spazio Fisico}
-	Ora estendiamo questa terza dimensione in uno spazio fisico appartenente alla nostra realtà. L'immersione in Black Cube prevede che il giocatore entri in una stanza rettangolare senza finestre, illuminata solo dalla luce dello schermo principale
+	Ora estendiamo questa terza dimensione in uno spazio fisico appartenente alla nostra realtà. L'immersione in Black Cube prevede che il giocatore entri in una stanza rettangolare senza finestre, illuminata solo dalla luce dello schermo principale sul quale è proiettato Black Cube e dagli schermi laterali sui quali sono proiettate immagini della nostra dimensione, la cui luminosità aumenta all'aumentare  dell'escursione dinamica dei suoni organici generati dal codice.
+	L'audio in uscita viene decodificato in ambisonics tramite una matrice sound field caricata all'interno del mixer fisico, le quattro uscite vengono inviate agli altoparlanti Front, Back, Left e Right
 	
 	\begin{figure}[h]
 		\begin{center}
@@ -122,6 +127,8 @@
 				\label{gr01}
 		\end{center}
 	\end{figure}
+
+L'installazione è realizzata con un'approccio volto all'aumento dell'immersione del giocatore. L'obiettivo è fornire un'esperienza a 360° in grado di coinvolgere totalmente il fruitore dell'opera. Maggiore è il suo livello di immersione in Black Cube, maggiore è la comprensione dell'essenza dell'opera, il coinvolgimento emotivo e la sensibilizzazione che questa può dare al giocatore.
 	
 \section*{SVILUPPI ED APPLICAZIONI}
 Tutto ciò trasforma Black Cube in un opera immersiva, coinvolgente, tattile. Ma che tipo di stimoli restituisce l'esperienza che offre? Cosa c'è da scoprire in un livello così profondo di astrazione e virtualtà? può Black Cube essere un'approccio suggestivo volto all'aumento delle capacità psichiche del giocatore? Può in qualche modo aumentare l'immersione e dunque il coinvolgimento del giocatore, sbloccandone un potenziale nascosto?
