@@ -1,3 +1,3 @@
-Black Cube collega ad ogni gesto un evento sonoro, visivo e tattile "alternativo".
+Black Cube è un'astrazione virtuale interattiva che collega ad ogni gesto compiuto dallo spettatore un evento sonoro, visivo e tattile "alternativo".
 Una terza dimensione con una sua coerenza interattiva che lega la gestualità ad un feedback non appartenente alla fisica conosciuta, quanto all'astrazione del gesto stesso. Denaturalizzazione estremizzata. Un ambiente virtuale espanso.
 Black Cube è tutto questo
